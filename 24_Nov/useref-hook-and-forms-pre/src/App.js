@@ -7,7 +7,6 @@ export default function App() {
   const onPlay = () => {
     ref.current.play();
   };
-
   const onPause = () => {
     ref.current.pause();
   };
