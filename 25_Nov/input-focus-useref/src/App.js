@@ -10,7 +10,6 @@ export default function App() {
     setText("");
     inputRef.current.focus();
   };
-
   console.log(inputRef);
   return (
     <div className="App">
