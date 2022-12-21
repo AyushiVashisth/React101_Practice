@@ -9,6 +9,7 @@ const CounterWithUseRef = () => {
     counterRef.current = counterRef.current + 1;
     console.log("line 9", counterRef.current);
   };
+
   console.log("component rendered, CounterWithUseRef");
 
   return (
