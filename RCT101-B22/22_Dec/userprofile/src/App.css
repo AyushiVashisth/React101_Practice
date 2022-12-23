@@ -6,6 +6,7 @@
   width: 70%;
   margin: auto;
   margin-top: 40px;
+  /* border: 1px solid black; */
 }
 .userProfile button {
   height: 35px;
@@ -13,11 +14,18 @@
   cursor: pointer;
   background-color: rgb(36, 41, 47);
   color: white;
-  border: none;
   border-radius: 10px;
   position: relative;
   top: 20px;
   margin-left: 50px;
+}
+.nameFollow{
+  display: flex;
+}
+.title {
+  position: relative;
+  top: -20px;
+  font-size: 19px;
 }
 .skills {
   display: flex;
@@ -33,19 +41,13 @@
   font-size: 12px;
   margin-left: 5px;
 }
-.nameFollow{
-  display: flex;
-}
+
 .avatar {
   height: 200px;
   border-radius: 50%;
   margin-left: 110px;
 }
-.title {
-  position: relative;
-  top: -20px;
-  font-size: 19px;
-}
+
 .allskill {
   display: grid;
   gap: 10px;
