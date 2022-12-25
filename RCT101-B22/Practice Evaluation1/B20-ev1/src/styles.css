@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.container {
+  border: 2px solid black;
+  padding: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  /* gap: 50px; */
+}
+
+.container div button {
+  padding: 10px 22px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  background: tomato;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.post {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+}
