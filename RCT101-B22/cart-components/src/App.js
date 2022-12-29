@@ -1,13 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 import CartContainer from "./Components/CartContainer";
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <CartContainer />
     </div>
   );
 }
-
-export default App;
