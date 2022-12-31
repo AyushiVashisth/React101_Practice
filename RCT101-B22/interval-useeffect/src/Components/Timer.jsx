@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Timer() {
-    const [count, setCount] = React.useState(0);
+    const [count, setCount] = React.useState(5);
 
     React.useEffect(() => {
         // this will be called during mount phase
