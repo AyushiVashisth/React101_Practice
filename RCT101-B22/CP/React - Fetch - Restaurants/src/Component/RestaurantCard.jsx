@@ -1,7 +1,6 @@
-import styles from "./RestaurantCard.module.css"
-
+import styles from "./RestaurantCard.css"
 function RestaurantCard(props) {
-  const { name,image, type, price_starts_from, rating, number_of_votes } = props;
+  const{image,name, number_of_votes, price_starts_from, rating, type } = props;
 
   return (
   <div data-testid="restaurant-card" className={styles.container}>
@@ -12,7 +11,7 @@ function RestaurantCard(props) {
    <p data-testid = "restaurant-card-price">{price_starts_from}</p>
    <p data-testid="restaurant-card-rating">{rating}</p>
    <p data-testid="restaurant-card-type">{type}</p>
-  </div>
+    </div>
   );
 }
 
