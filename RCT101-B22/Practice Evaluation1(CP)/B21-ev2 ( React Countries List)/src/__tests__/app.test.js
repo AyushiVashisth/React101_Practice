@@ -9,7 +9,7 @@ import {
   cleanup,
   act,
   getByTestId,
-  findByTestId,
+  findByTestId
 } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Countries from "../Component/Countries.jsx";
@@ -23,13 +23,13 @@ function getPageElements(container) {
   return {
     prevPage: getByTestId(container, "prev-page"),
     nextPage: getByTestId(container, "next-page"),
-    currentPage: getByTestId(container, "current-page"),
+    currentPage: getByTestId(container, "current-page")
   };
 }
 function getCountriesElements(container) {
   return {
     title: getByTestId(container, "country-card-name"),
-    population: getByTestId(container, "country-card-population"),
+    population: getByTestId(container, "country-card-population")
   };
 }
 const sleep = (delay) => new Promise((res) => setTimeout(res, delay));
@@ -44,7 +44,6 @@ beforeAll(() => {
   console.log("Rest score to: 1");
 });
 
-jest.setTimeout(60000);
 try {
   describe("Test cases", () => {
     console.log("Resetting score to 1");
@@ -96,8 +95,8 @@ try {
               const prevPage = screen.getByTestId("prev-page");
               fireEvent.click(prevPage);
               expect(fn).toBeCalledTimes(1);
-            },
-          ],
+            }
+          ]
         },
         {
           data: { onChange: fn, current: 2, total: 4 },
@@ -122,8 +121,8 @@ try {
               const prevPage = screen.getByTestId("prev-page");
               fireEvent.click(prevPage);
               expect(fn).toBeCalledTimes(3);
-            },
-          ],
+            }
+          ]
         },
         {
           data: { onChange: fn, current: 3, total: 3 },
@@ -148,9 +147,9 @@ try {
               const prevPage = screen.getByTestId("prev-page");
               fireEvent.click(prevPage);
               expect(fn).toBeCalledTimes(4);
-            },
-          ],
-        },
+            }
+          ]
+        }
       ];
 
       data.forEach(({ data, tests }) => {
