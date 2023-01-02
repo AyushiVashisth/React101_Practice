@@ -7,8 +7,18 @@
     { "country": "San Marino", "id": 14, "Rank": 191, "population": 32104 },
     { "country": "Monaco", "id": 29, "Rank": 190, "population": 38010 },
     { "country": "Liechtenstein", "id": 189, "Rank": 189, "population": 38022 },
-    { "country": "Marshall Islands", "id": 50, "Rank": 188, "population": 53132 },
-    { "country": "Saint Kitts and Nevis", "id": 86, "Rank": 187, "population": 56780 },
+    {
+      "country": "Marshall Islands",
+      "id": 50,
+      "Rank": 188,
+      "population": 53132
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "id": 86,
+      "Rank": 187,
+      "population": 56780
+    },
     { "country": "Andorra", "id": 164, "Rank": 186, "population": 68728 }
   ],
   "totalPages": 20

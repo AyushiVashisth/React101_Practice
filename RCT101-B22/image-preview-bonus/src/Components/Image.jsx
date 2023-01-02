@@ -2,16 +2,20 @@ import { useRef, useState } from "react";
 
 export default function Image() {
   const [image, setImage] = useState("");
-  const [show, setShow] = useState(false);
+  const [loading,setLoading]=useState(false);
+  const[done,setDOne]=useState(false);
   const ref = useRef(null);
 
-  const handleImage = () => {
+  const handleImage = () =>{
+    setLoading(true);
     setImage(URL.createObjectURL(ref.current.files[0]));
   }
-
-  const handleShow = () => {
-    setShow(!show)
-  };
+const handleUpload=()=>{
+  setLoading(false);
+  setImage(null)
+  setDOne(true)
+}
+  
 
   return (
     <div>
@@ -21,14 +25,9 @@ export default function Image() {
         onChange={handleImage}
         type="file"
       />
-      <br />
-      <br />
-      {show && <div><img width="260px" height="320px" src={image} alt="avatar" /></div>}
-      <br />
-      <button onClick={handleShow}>
-        {show ? "Hide Image" : "Show Image"}
-      </button>
-      
+        {loading && <img width="50px" height="50px" src={image} alt="avatar" /> } 
+        {loading && <button onClick={handleUpload}> Upload</button>}
+        {done &&<h3>Uploaded Successfully</h3>}
     </div>
   );
 }
