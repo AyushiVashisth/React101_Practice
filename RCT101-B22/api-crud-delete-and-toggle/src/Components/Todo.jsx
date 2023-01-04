@@ -25,6 +25,7 @@ export default function Todo() {
   const handleDelete = (id) => {
     const updateData = data.filter((item) => item.id !== id);
     setData(updateData);
+    
   };
 
   const handleToggle = (id) => {
