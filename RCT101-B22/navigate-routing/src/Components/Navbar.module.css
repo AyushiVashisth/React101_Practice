@@ -1,0 +1,16 @@
+.active{
+    text-decoration: none;
+    color: green
+}
+
+.default{
+    text-decoration: none;
+    color: black;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: pink;
+}
