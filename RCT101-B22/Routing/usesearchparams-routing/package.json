@@ -1,5 +1,5 @@
 {
-  "name": "authentication-routing",
+  "name": "usesearchparams-routing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
