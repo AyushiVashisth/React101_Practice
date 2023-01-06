@@ -148,6 +148,7 @@ npm run test
 
   - this component should accept a property called `products` which is the array of products data that you retreive from the API, you should map through this and transform into components with ProductItems
 
+
 - `ProductItem`
 
   - Component to display information of a single product
