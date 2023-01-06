@@ -6,6 +6,7 @@ import HomePage from "./HomePage";
 import SingleUserPage from "./SingleUserPage";
 import UsersPage from "./UsersPage";
 import SuccessPage from "./SuccessPage";
+import Login from "./Login";
 import PrivateRoute from "../Components/PrivateRoute";
 
 function AllRoutes(){
@@ -15,6 +16,7 @@ function AllRoutes(){
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/about" element={<AboutPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
+                <Route path="/login" element={<Login/>} />
                 <Route 
                     path="/users" 
                     element={
