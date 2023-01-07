@@ -1,11 +1,9 @@
 import { useRef, useState } from "react";
-
 export default function Image() {
   const [image, setImage] = useState("");
   const [loading,setLoading]=useState(false);
   const[done,setDOne]=useState(false);
   const ref = useRef(null);
-
   const handleImage = () =>{
     setLoading(true);
     setImage(URL.createObjectURL(ref.current.files[0]));
@@ -15,8 +13,6 @@ const handleUpload=()=>{
   setImage(null)
   setDOne(true)
 }
-  
-
   return (
     <div>
       <h1>Preview the image</h1>
@@ -31,3 +27,4 @@ const handleUpload=()=>{
     </div>
   );
 }
+
