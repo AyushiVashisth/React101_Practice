@@ -29,11 +29,6 @@ function NavBar() {
                 {link.title}
             </NavLink>
             ))}
-            {/* { links.map((link)=> (
-            <Link key={link.path} to={link.path}>
-                {link.title}
-            </Link>
-            ))} */}
         </div>
     </>
   )

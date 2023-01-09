@@ -24,6 +24,7 @@ export default function AllProducts() {
         {/* Map the below div against product data */}
         {data.map((el) => 
           <div key={el.id}>
+            <img src={el.image} alt=""/>
             <h3 className="name"> {el.title}</h3>
             <div className="brand">{el.brand}</div>
             <div className="price">{el.price}</div>
