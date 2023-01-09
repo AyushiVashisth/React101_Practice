@@ -51,13 +51,11 @@ function Login(){
       </div>
   )
 }
-// console.log("APp")
 function App() {
   return <BrowserRouter>
   {/* Add your code here */}
       <NavBar />
       <AllRoutes />
-      {/* <h1>hii</h1> */}
   </BrowserRouter>;
 }
 
